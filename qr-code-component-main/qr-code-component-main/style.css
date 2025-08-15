@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#scanner-img{
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 1rem;
+    transition: all 0.2s ease-in;
+}
+.scanner-container{
+    border-radius: 2rem;
+    margin: 1rem;
+    max-width: 380px;
+    padding: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 45%, 89%);
+    transition: all 0.3s ease-in;
+    
+}
+.msg{
+    gap: 5px;
+    max-width: 100%;
+    text-align: center;
+    color:hsl(216, 15%, 48%)
+}
+.scanner-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#scanner-img:hover{
+    transform: translateY(-5px);
+}
+.scanner-container:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 0px 3px rgba(149, 136, 136, 0.732);
+}
